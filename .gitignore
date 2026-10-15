@@ -1,0 +1,45 @@
+# --- Python virtual environments (see README for setup) ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Python bytecode / caches / packaging ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Audit output: real tenant data (resource IDs, tags, TF state) - never commit ---
+output/*
+
+# --- Terraform artefacts, in case a TF root is ever placed in/under this repo ---
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+tfplan
+*.tfplan
+
+# --- Secrets / local config ---
+.env
+.env.*
+*.pem
+*.key
+
+# --- Local scratch notes (contain subscription IDs and local paths) ---
+steps.txt
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*.xlsx
